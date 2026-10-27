@@ -1,31 +1,14 @@
+from clases.Gato import Gato
+from clases.Perro import Perro
 
-class Personaje:
-    def __init__(self, nombre, salud):
-        self.nombre = nombre
-        self.salud = salud
+gatoUno = Gato("Michifu", 1)
+perroUno = Perro("Toby", 2)
 
-    def obtener_salud(self):
-        return self.salud
-
-    def imprimir(self):
-        return f"Su nombre es: {self.nombre}  y tiene:  {self.salud}  de salud"
+gatoUno.dormir()
 
 
-
-personajes = [
-    Personaje("Baltazar", 40),
-    Personaje("Merlin", 30),
-    Personaje("Morgana", 20),]
+gatoUno.hacer_sonido()
+gatoUno.saltar()
 
 
-for personaje in personajes:
-    print(personaje.imprimir())
-
-
-
-
-
-
-
-
-
+perroUno.ladrar()
